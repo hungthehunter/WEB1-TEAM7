@@ -1,0 +1,32 @@
+/* .flex{
+display: flex;
+}
+.btn{
+    margin: auto;
+    font-size: 2rem;
+    font-weight: 700;
+    padding:  0.5em 1em;
+    background-color: purple;
+    color: aliceblue;
+    border: 10px solid  peru;
+    border-radius: 5px;
+    transition: all 0.3s ease
+}
+.btn:hover{
+transform: translateY(50px);
+background-color: aliceblue;
+color: purple;
+} */
+@keyframes SliderInLeft {
+    from{
+transform: translateX(-300px);
+    }
+    to{
+        transform: translateX(0px);
+
+    }
+}
+.heading-1{
+animation: SliderInLeft 1s ease-in 0s 1 normal both;
+transform: translate(-150px);
+}

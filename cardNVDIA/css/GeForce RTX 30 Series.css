@@ -1,0 +1,24 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.menu-button-ds.collapsed:active {
+    margin-left: 264px;
+}
+.menu-button-ds{
+    transition: all 0.35s ease-in-out;
+}
+.menu-button-ds button {
+    border: none;
+    background-color: inherit;
+}
+
+.visibility-visible {
+    visibility: visible;
+}
+
+.visibility-hidden {
+    visibility: hidden;
+}
