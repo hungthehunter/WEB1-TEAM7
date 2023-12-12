@@ -1,70 +1,70 @@
 //change Sort-list
-Sort_list();
-function Sort_list(){
-const grid_default=document.getElementById("column-list-view");
-const list_default=document.getElementById("row-list-view");
-const load_row_product=document.querySelectorAll("#product-item");
-const load_row_detail=document.querySelectorAll("#product-detail");
-const load_row_buy=document.querySelectorAll("#product-buy");
-const load_row_container=document.querySelectorAll("#product-container");
-const load_row_picture=document.querySelectorAll("#product-img");
+// Sort_list();
+// function Sort_list(){
+// const grid_default=document.getElementById("column-list-view");
+// const list_default=document.getElementById("row-list-view");
+// const load_row_product=document.querySelectorAll("#product-item");
+// const load_row_detail=document.querySelectorAll("#product-detail");
+// const load_row_buy=document.querySelectorAll("#product-buy");
+// const load_row_container=document.querySelectorAll("#product-container");
+// const load_row_picture=document.querySelectorAll("#product-img");
 
-grid_default.addEventListener("click",()=>{
-grid_default.classList.remove("list-view-default-column");
-list_default.classList.remove("list-view-active-row")
-grid_default.classList.add("list-view-active-column");
-list_default.classList.add("list-view-default-row");
-load_row_picture.forEach((a)=>{
-   a.classList.remove("img-lg");
-   a.classList.add("load-more-img-lg");
-   })
-load_row_container.forEach((a)=>{
-   a.classList.remove("load-more-product");
-   a.classList.add("load-more-container-column");
-   })
-load_row_product.forEach((a)=>{
-a.classList.remove("product-container");
-a.classList.add("load-more-column")
-})
+// grid_default.addEventListener("click",()=>{
+// grid_default.classList.remove("list-view-default-column");
+// list_default.classList.remove("list-view-active-row")
+// grid_default.classList.add("list-view-active-column");
+// list_default.classList.add("list-view-default-row");
+// load_row_picture.forEach((a)=>{
+//    a.classList.remove("img-lg");
+//    a.classList.add("load-more-img-lg");
+//    })
+// load_row_container.forEach((a)=>{
+//    a.classList.remove("load-more-product");
+//    a.classList.add("load-more-container-column");
+//    })
+// load_row_product.forEach((a)=>{
+// a.classList.remove("product-container");
+// a.classList.add("load-more-column")
+// })
 
-load_row_detail.forEach((a)=>{
-   a.classList.remove("detail-col");
-   a.classList.add("load-more-column-product");
-   })
-load_row_buy.forEach((a)=>{
-   a.classList.remove("buy-col-lg")
-   a.classList.add("load-more-column-buy");
-   })
-})
+// load_row_detail.forEach((a)=>{
+//    a.classList.remove("detail-col");
+//    a.classList.add("load-more-column-product");
+//    })
+// load_row_buy.forEach((a)=>{
+//    a.classList.remove("buy-col-lg")
+//    a.classList.add("load-more-column-buy");
+//    })
+// })
 
-list_default.addEventListener("click",()=>{
-   list_default.classList.remove("list-view-default-row");
-    grid_default.classList.remove("list-view-active-column")
-   list_default.classList.add("list-view-active-row");
-   grid_default.classList.add("list-view-default-column");
-   load_row_picture.forEach((a)=>{
-      a.classList.add("img-lg");
-      a.classList.remove("load-more-img-lg");
-      })
-   load_row_container.forEach((a)=>{
-      a.classList.add("load-more-product");
-      a.classList.remove("load-more-container-column");
-      })
-   load_row_product.forEach((a)=>{
-   a.classList.add("product-container");
-   a.classList.remove("load-more-column")
-   })
+// list_default.addEventListener("click",()=>{
+//    list_default.classList.remove("list-view-default-row");
+//     grid_default.classList.remove("list-view-active-column")
+//    list_default.classList.add("list-view-active-row");
+//    grid_default.classList.add("list-view-default-column");
+//    load_row_picture.forEach((a)=>{
+//       a.classList.add("img-lg");
+//       a.classList.remove("load-more-img-lg");
+//       })
+//    load_row_container.forEach((a)=>{
+//       a.classList.add("load-more-product");
+//       a.classList.remove("load-more-container-column");
+//       })
+//    load_row_product.forEach((a)=>{
+//    a.classList.add("product-container");
+//    a.classList.remove("load-more-column")
+//    })
    
-   load_row_detail.forEach((a)=>{
-      a.classList.add("detail-col");
-      a.classList.remove("load-more-column-product");
-      })
-   load_row_buy.forEach((a)=>{
-      a.classList.add("buy-col-lg")
-      a.classList.remove("load-more-column-buy");
-      })
-})
-}
+//    load_row_detail.forEach((a)=>{
+//       a.classList.add("detail-col");
+//       a.classList.remove("load-more-column-product");
+//       })
+//    load_row_buy.forEach((a)=>{
+//       a.classList.add("buy-col-lg")
+//       a.classList.remove("load-more-column-buy");
+//       })
+// })
+// }
 
 //Automatic sliderShow - change img every 4 second
 // var myIndex = 0;
@@ -279,3 +279,7 @@ function Click_Hardware_software() {
         }
     })
 }
+
+
+/* Array Product */
+

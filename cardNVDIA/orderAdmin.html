@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/1acf2d22a5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/style_OrderAdmin.css">
+    <title>Đơn hàng</title>
+</head>
+<body>
+    <head>
+        <header>
+            <nav>
+                <ul class="navbar-list">
+                    <!--link hompage-->
+                    <li class="left">
+                        <a href="index.html">
+                        <img src="./img/NVIDIA.png" style="width: 150px; height: 30px;">
+                        </a>
+                    </li>
+                    <div class="right">
+                        <li>
+                            <input type="text" placeholder="Tên sản phẩm..."> 
+                            <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-circle-user"></i> Admin
+                        </li>
+                    </div>
+                </ul>
+        </nav>
+        </header>
+    </head>
+<main>
+    <aside id="mySidebar">
+        <ul>
+            <li><a onclick="w3_close()">Đóng &times;</a></li>
+            <li><a class="active">Đơn hàng</a></li>
+            <li><a href="userAdmin.html">Người dùng</a></li>
+        </ul>
+    </aside>
+    <section id="main">
+        <button id="openNav" class="menu-button" onclick="w3_open()">&#9776; Menu</button>
+        <h1>Đơn Hàng</h1>
+        <!--product list-->
+        <div class="filter">
+            <div class="date">
+                <label for="start">Từ ngày: </label>
+                    <input type="date" id="start" name="start" value="2023-11-24" min="2018-01-01" max="2023-12-31">
+                    <label for="start">đến </label>
+                    <input type="date" id="end" name="end" value="2023-11-30" min="2018-01-01" max="2023-12-31">
+            </div>
+            <a href="orderAdmin.html" class="show"></i>Xem</a>
+        </div>
+        <table>
+            <!--noi dung tieu de-->
+            <tr class="title">
+                <th>ID</th>
+                <th>Đơn hàng</th>
+                <th>Địa chỉ</th>
+                <th>Thành tiền</th>
+                <th>Trạng thái</th>
+            </tr>
+            <!--noi dung cac san pham-->
+            <tr class="product">
+                <td>#1</td>
+                <td>
+                    <a href="orderDetail.html">
+                    <img src="" alt="lap1">
+                    <div>
+                        <p></p>
+                        <p></p>
+                        <p class="another">(2 sản phẩm khác)</p>
+                    </div>
+                    </a>
+                </td>
+                <td></td>
+                <td></td>
+                <td class="state"></td>
+            </tr>
+            <tr class="product">
+                <td>#2</td>
+                <td>
+                    <a href="orderDetail.html">
+                        <img src="" alt="lap1">
+                        <div>
+                            <p></p>
+                            <p></p>
+                            <p class="another">(2 sản phẩm khác)</p>
+                        </div>
+                    </a>
+                </td>
+                <td></td>
+                <td></td>
+                <td class="state">Đã nhận</td>
+            </tr>
+            <tr class="product">
+                <td>#3</td>
+                <td>
+                    <a href="orderDetail.html">
+                        <img src="" alt="lap1">
+                        <div>
+                            <p></p>
+                            <p></p>
+                            <p class="another">(2 sản phẩm khác)</p>
+                        </div>
+                    </a>
+                </td>
+                <td></td>
+                <td></td>
+                <td class="state">Đã nhận</td>
+            </tr>
+            <tr class="product">
+                <td>#4</td>
+                <td>
+                    <a href="orderDetail.html">
+                        <img src="" alt="lap1">
+                        <div>
+                            <p></p>
+                            <p></p>
+                            <p class="another">(2 sản phẩm khác)</p>
+                        </div>
+                    </a>
+                </td>
+                <td></td>
+                <td></td>
+                <td class="state">Đã nhận</td>
+            </tr>
+        </table>
+    </section>
+</main>
+<script>
+    // js cua phan aside menu
+        function w3_open() {
+            document.getElementById("main").style.marginLeft = "15%";
+            document.getElementById("mySidebar").style.width = "15%";
+            document.getElementById("mySidebar").style.display = "block";
+            document.getElementById("openNav").style.display = 'none';
+            }
+        function w3_close() {
+            document.getElementById("main").style.marginLeft = "0%";
+            document.getElementById("mySidebar").style.display = "none";
+            document.getElementById("openNav").style.display = "inline-block";
+        }
+
+</script>
+</body>
+</html>

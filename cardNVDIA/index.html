@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./fonts/fontawesome-free-6.2.1-web/css/all.min.css">
+    <link rel="stylesheet" href="./css/NVDIA_STORE_MAIN.css">
+    <link rel="stylesheet" href="./css/grid.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>NVDIA</title>
+    <style>
+        #user-email {
+            font-size: 18px; /* Kích thước chữ */
+            font-weight: bold; /* Độ đậm của chữ */
+            color: #3498db; /* Màu chữ */
+            text-decoration: underline; /* Gạch chân dưới */
+            cursor: pointer; /* Con trỏ khi di chuột qua */
+        }
+    </style>
+</head>
+
+<body>
+    <header class="wrapper">
+        <div class="inner">
+          <nav class="global-nav">
+            <div class="nav-header-container">
+              <div class="logo-container">
+                <div class="logo">
+                    <a href="NVDIA_STORE_MAIN.html">
+                  <img src="./img/NVIDIA.png" alt="nvidia-icon" style="width: 100px; height: 20px;">
+                </a>
+                </div>
+              </div>
+              <!-- Check if the path is one of the specified ones -->
+              <div class="nav-tool-container">
+                <div>
+                    <span id="user-email"></span>
+                </div>
+                <span class="cart-counter">0</span>
+                <div id="cart" class="cart">
+                <a href="userAdmin.html"><i class="fa-solid fa-cart-shopping" style="color: black; margin-right: 14px;"></i></a>
+                </div>
+                <i class="fa-solid fa-user" style="color: black;" onclick="toggleLogin()"></i>
+                <div id="sidebar" class="sidebar"></div>
+              </div>
+            </div>
+            <nav class="navbar-fixed-top">
+              <div class="container">
+                <div class="row">
+                  <div class="navbar-header">
+                    <h1 class="navbar-brand">NVIDIA Store</h1>
+                  </div>
+                </div>
+              </div>
+            </nav>
+          </nav>
+        </div>
+      </header>
+   
+    <div id="slider">
+
+        <div class="slider-item">
+            <img src="./img/geforce-ada-4090-background-image-spec2-bb300_300-l.jpg" alt="" class="slider-img">
+
+            <div class="slider text-content">
+                <div class="slider text-brand">
+                    <span>
+                        <b id="text-brand-ad">GeForce RTX 40 Series</b>
+                    </span>
+                </div>
+                <div class="slider text-heading">
+                    <span>
+                        <b>BEYOND FAST</b>
+                    </span>
+                </div>
+                <div class="slider text-choose">
+                    <a href="./Shop GeForce Graphics Cards, Laptops, and Systems.html" class="btn brand-green-btn green-success">Shop Now</a>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="slider-item">
+            <img src="./img/shield-full-family-launch-wmfg-2560x300.jpg" alt="" class="slider-img">
+            <!-- <div class="slider text-btn">
+            <ul class="btn-cadidator">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div> -->
+            <div class="slider text-content">
+                <div class="slider text-heading">
+                    <span>
+                        <b id="text-brand-ad">More Options.<br>More to Love</b>
+                    </span>
+                </div>
+                <div class="slider text-brand">
+                    <span>
+                        <b>The All-New SHIELD TV.</b>
+                    </span>
+                </div>
+                <div class="slider text-choose">
+                    <a href="./Shop GeForce Graphics Cards, Laptops, and Systems.html" class="btn brand-green-btn green-success">Shop Now</a>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="slider-item ">
+            <img src="./img/jetson-nano-shop-1360x300.jpg" alt="" class="slider-img">
+            <!-- <div class="slider text-btn">
+            <ul class="btn-cadidator">
+                <li ></li>
+                <li ></li>
+                <li ></li>
+                <li ></li>
+            </ul>
+        </div> -->
+            <div class="slider text-content">
+                <div class="slider text-heading">
+                    <span>
+                        <b id="text-brand-ad">Jetson Store</b>
+                    </span>
+                </div>
+                <div class="slider text-brand">
+                    <span>
+                        <b>Buy the latest developer kits</b>
+                    </span>
+                </div>
+                <div class="slider text-choose">
+                    <a href="./Shop GeForce Graphics Cards, Laptops, and Systems.html" class="btn brand-green-btn green-success">Shop Now</a>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="slider-item">
+            <img src="./img/geforce-laptops-shop-banner-background-image-1360x300.jpg" alt="" class="slider-img">
+            <!-- <div class="slider text-btn">
+            <ul class="btn-cadidator">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div> -->
+            <div class="slider text-content">
+                <div class="slider text-heading">
+                    <span>
+                        <b id="text-brand-ad">Worker by Day.
+                            <br>Warrior by Night.</b>
+                    </span>
+                </div>
+                <div class="slider text-brand">
+                    <span>
+                        <b>Thin and Powerful GeForce Laptops</b>
+                    </span>
+                </div>
+                <div class="slider text-choose">
+                    <a href="./Shop GeForce Graphics Cards, Laptops, and Systems.html" class="btn brand-green-btn green-success">Shop All</a>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="slider text-btn">
+            <ul class="btn-cadidator">
+                <li onclick="currentDiv(1)"></li>
+                <li onclick="currentDiv(2)"></li>
+                <li onclick="currentDiv(3)"></li>
+                <li onclick="currentDiv(4)"></li>
+            </ul>
+        </div>
+    </div>
+    <div class="produce-section">
+        <div class="grid wide">
+            <div id="content">
+
+                <!-- Begin:Gaming and Etertainment -->
+                <div class="text-center mt-32">
+                    <h1 class="color-black ">Gaming and Entertainment</h1>
+                </div>
+
+                <div class="content-section">
+                    <div class="produce-list">
+
+                        <div class="row">
+                            <div class=" mt-32 text-center col  l-3 m-6 c-12">
+                                <div class="list-item">
+
+
+                                    <a href="">
+                                        <div><img src="./img/geforce-ada-40-series-gf-spotlight-600x338-p@2x.jpg" alt=""
+                                                class=" produce-picture"></div>
+                                    </a>
+
+                                    <div class="item-content text-center">
+                                        <a href="./Shop GeForce Graphics Cards, Laptops, and Systems.html" class="address-name-item">
+                                            <h3 class="color-black">GeForce Graphics Cards and Desktops</h3>
+                                        </a>
+                                        <a href="./Shop GeForce Graphics Cards, Laptops, and Systems.html" class="address-shop-item color-green ">
+                                            Shop Now &nbsp;
+                                            <i class="icon-content fa fa-angle-right" aria-hidden="true"></i>
+
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="  mt-32 text-center col l-3 m-6 c-12">
+                                <div class="list-item">
+                                    <a href="">
+                                        <img src="./img/geforce-rtx-30-series-laptops-evens-4c25-P@2x.jpg" alt=""
+                                            class="produce-picture">
+                                    </a>
+                                    <div class="item-content text-center">
+                                        <a href="./Shop GeForce Graphics Cards, Laptops, and Systems.html" class="address-name-item color-black">
+                                            <h3 class="color-black">GeForce Laptop</h3>
+                                        </a>
+                                        <a href="./Shop GeForce Graphics Cards, Laptops, and Systems.html" class="address-shop-item color-green ">
+                                            Shop Now &nbsp;
+                                            <i class="icon-content fa fa-angle-right" aria-hidden="true"></i>
+
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="  mt-32 text-center col l-3 m-6 c-12">
+                                <div class="list-item">
+                                    <a href="">
+                                        <img src="./img/geforce-now-evens-4c25-P@2x.jpg" alt="" class="produce-picture">
+                                    </a>
+                                    <div class="item-content text-center">
+                                        <a href="./Shop GeForce Graphics Cards, Laptops, and Systems.html" class="address-name-item color-black">
+                                            <h3 class="color-black">GeForce Now</h3>
+                                        </a>
+                                        <a href="./Shop GeForce Graphics Cards, Laptops, and Systems.html" class="address-shop-item color-green ">
+                                            Shop Now &nbsp;
+                                            <i class="icon-content fa fa-angle-right" aria-hidden="true"></i>
+
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="   mt-32 text-center col l-3 m-6 c-12">
+                                <div class="list-item">
+                                    <a href="">
+                                        <img src="./img/nvidia-shield-evens-4c25-P@2x.jpg" alt=""
+                                            class="d produce-picture">
+                                    </a>
+                                    <div class="item-content text-center">
+                                        <a href="./Shop GeForce Graphics Cards, Laptops, and Systems.html" class="address-name-item color-black">
+                                            <h3 class="color-black">NVIDIA SHIELD</h3>
+                                        </a>
+                                        <a href="./Shop GeForce Graphics Cards, Laptops, and Systems.html" class="address-shop-item color-green ">
+                                            Shop Now &nbsp;
+                                            <i class="icon-content fa fa-angle-right" aria-hidden="true"></i>
+
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End:Gaming and Etertainment -->
+                <!-- Begin:Graphics Cards, Laptops and Embedded Systems -->
+                <div class="text-center">
+                    <h1 class="color-black ">Graphics Cards, Laptops and Embedded Systems</h1>
+                </div>
+
+                <div class="content-section">
+                    <div class=" produce-list">
+                        <div class="row">
+                            <div class="col mt-32 text-center l-3 m-6 c-12">
+                                <div class="list-item">
+                                    <a href="">
+                                        <div><img src="./img/nvidia-studio-laptops-and-desktops-evens-4c25-P@2x.jpg"
+                                                alt="" class=" produce-picture"></div>
+                                    </a>
+
+                                    <div class="item-content text-center">
+                                        <a href="./Shop GeForce Graphics Cards, Laptops, and Systems.html" class="address-name-item">
+                                            <h3 class="color-black">STUDIO Creator Laptops and Desktops</h3>
+                                        </a>
+                                        <a href="./Shop GeForce Graphics Cards, Laptops, and Systems.html" class="address-shop-item color-green ">
+                                            Shop Now &nbsp;
+                                            <i class="icon-content fa fa-angle-right" aria-hidden="true"></i>
+
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" col  mt-32 text-center l-3 m-6 c-12">
+                                <div class="list-item">
+                                    <a href="">
+                                        <img src="./img/nvidia-rtx-a6000-evens-4c25-P@2x.jpg" alt=""
+                                            class="produce-picture">
+                                    </a>
+                                    <div class="item-content text-center">
+                                        <a href="./Shop GeForce Graphics Cards, Laptops, and Systems.html" class="address-name-item color-black">
+                                            <h3 class="color-black">NVIDIA RTX Professional Graphics Cards</h3>
+                                        </a>
+                                        <a href="./Shop GeForce Graphics Cards, Laptops, and Systems.html" class="address-shop-item color-green ">
+                                            Shop Now &nbsp;
+                                            <i class="icon-content fa fa-angle-right" aria-hidden="true"></i>
+
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" col  mt-32 text-center l-3 m-6 c-12">
+                                <div class="list-item">
+                                    <a href="">
+                                        <img src="./img/nvidia-titan-rtx-evens-4c25-P@2x.jpg" alt=""
+                                            class="produce-picture">
+                                    </a>
+                                    <div class="item-content text-center">
+                                        <a href="./Shop GeForce Graphics Cards, Laptops, and Systems.html" class="address-name-item color-black">
+                                            <h3 class="color-black">NVIDIA TITAN Graphics Cards</h3>
+                                        </a>
+                                        <a href="./Shop GeForce Graphics Cards, Laptops, and Systems.html" class="address-shop-item color-green ">
+                                            Shop Now &nbsp;
+                                            <i class="icon-content fa fa-angle-right" aria-hidden="true"></i>
+
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" col  mt-32 text-center l-3 m-6 c-12">
+                                <div class="list-item">
+                                    <img src="./img/nvidia-jetson-family-evens-4c25-P@2x.jpg" alt=""
+                                        class="d produce-picture">
+                                    <div class="item-content text-center">
+                                        <a href="./Shop GeForce Graphics Cards, Laptops, and Systems.html" class="address-name-item color-black">
+                                            <h3 class="color-black">NVIDIA Jetson</h3>
+                                        </a>
+                                        <a href="./Shop GeForce Graphics Cards, Laptops, and Systems.html" class="address-shop-item color-green ">
+                                            Shop Now &nbsp;
+                                            <i class="icon-content fa fa-angle-right" aria-hidden="true"></i>
+
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End:Graphics Cards, Laptops and Embedded Systems -->
+                <!-- Begin:Networking -->
+                <div class="text-center">
+                    <h1 class="color-black ">Networking</h1>
+                </div>
+
+                <div class="content-section">
+                    <div class="row produce-list">
+                        <div class=" col l-3 m-6 mt-32 text-center c-12">
+                            <div class="list-item">
+                                <a href="">
+                                    <div><img src="./img/nvidia-networking-adapters-evens-3c33-P@2x.jpg" alt=""
+                                            class="produce-picture"></div>
+                                </a>
+
+                                <div class="item-content text-center">
+                                    <a href="./Shop GeForce Graphics Cards, Laptops, and Systems.html" class="address-name-item">
+                                        <h3 class="color-black">Adapter Cards</h3>
+                                    </a>
+                                    <a href="./Shop GeForce Graphics Cards, Laptops, and Systems.html" class="address-shop-item color-green ">
+                                        Shop Now &nbsp;
+                                        <i class="icon-content fa fa-angle-right" aria-hidden="true"></i>
+
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" col l-3 m-6 mt-32 text-center c-12">
+                            <div class="list-item">
+                                <a href="">
+                                    <img src="./img/nvidia-networking-switches-evens-3c33-P@2x.jpg" alt=""
+                                        class="produce-picture">
+                                </a>
+                                <div class="item-content text-center">
+                                    <a href="./Shop GeForce Graphics Cards, Laptops, and Systems.html" class="address-name-item color-black">
+                                        <h3 class="color-black">Switch Systems</h3>
+                                    </a>
+                                    <a href="./Shop GeForce Graphics Cards, Laptops, and Systems.html" class="address-shop-item color-green ">
+                                        Shop Now &nbsp;
+                                        <i class="icon-content fa fa-angle-right" aria-hidden="true"></i>
+
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" col l-3 m-6 mt-32 text-center c-12">
+                            <div class="list-item">
+                                <a href="">
+                                    <img src="./img/bluefield-2-controler-card-4c25-p@2x.jpg" alt=""
+                                        class="produce-picture">
+                                </a>
+                                <div class="item-content text-center">
+                                    <a href="./Shop GeForce Graphics Cards, Laptops, and Systems.html" class="address-name-item color-black">
+                                        <h3 class="color-black">DPU</h3>
+                                    </a>
+                                    <a href="./Shop GeForce Graphics Cards, Laptops, and Systems.html" class="address-shop-item color-green ">
+                                        Shop Now &nbsp;
+                                        <i class="icon-content fa fa-angle-right" aria-hidden="true"></i>
+
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" col l-3 m-6 mt-32 text-center c-12">
+                            <div class="list-item">
+                                <a href="">
+                                    <img src="./img/nvidia-interconnect-evens-3c33-P@2x.jpg" alt=""
+                                        class="d produce-picture">
+                                </a>
+                                <div class="item-content text-center">
+                                    <a href="./Shop GeForce Graphics Cards, Laptops, and Systems.html" class="address-name-item color-black">
+                                        <h3 class="color-black">Interconnect</h3>
+                                    </a>
+                                    <a href="./Shop GeForce Graphics Cards, Laptops, and Systems.html" class="address-shop-item color-green ">
+                                        Shop Now &nbsp;
+                                        <i class="icon-content fa fa-angle-right" aria-hidden="true"></i>
+
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End:Networking -->
+        </div>
+    </div>
+
+    <div class="outer-promoBanner">
+        <div class="row promoBanner">
+            <div class="promoContent">
+               
+              
+                <div class="promoText">
+                    <span>
+                        <h2 class="color-green">NVIDIA Deep Learning <br> Institute</h2>
+                        <h3 class="color-black">Education and Training Solution to Solve the World's Most Challenging
+                            Problem</h3>
+                        <div class="promoTextbtn">
+                            <a href="./Shop GeForce Graphics Cards, Laptops, and Systems.html" class="btn brand-green-btn green-success">Get Online Training</a>
+                        </div>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row col col-12  outer-footerSection">
+        <span>
+            <a href="" class="color-black underline-green">Customer Service</a>
+            <span class="footer-separate">|</span>
+            <a href="" class="color-black underline-green">Technical Supports</a>
+            <span class="footer-separate">|</span>
+            <a href="" class="color-black underline-green">My Account</a>
+        </span>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div id="foot">
+        <div class="container_footer">
+            <div class="topfoot">
+                <div class="footmenu">
+                    <h4>LIÊN HỆ</h4>
+                    <p>Email:<a href="">phucly069@gmail.com</a>
+                        <a href="">lenguyenquochunghello@gmail.com </a>
+                        <a href="">nguyenbang.2301@gmail.com</a>
+                    </p>
+                    <p>Hotline:<a href="">1900 633 028</a>
+                    </p>
+                    <p>Mon-Sun<a href="">09:30 - 21:30</a>
+                    </p>
+                </div>
+                <div class="footmenu">
+                    <h4>CỬA HÀNG</h4>
+                    <p>273 An Dương Vương,TPHCM</a><br>
+                    <p>123 Alexander, Toronto, Canada</a><br>
+                    <p>842 Donald, California, America</a><br>
+                </div>
+                <div class="footmenu">
+                    <h4>HỖ TRỢ</h4>
+                    <a href="contact.html">Chính sách đổi trả & bảo hành</a>
+                </div>
+                <div class="footmenu">
+                    <h4>MỞ RỘNG</h4>
+                    <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://twitter.com/?lang=vi"><i class="fab fa-twitter"></i></a>
+                </div>
+                
+            </div>
+            <div class="botfoot" >
+                <p>2022 &#169; Copyright NVIDIA. All Rights Reserved.</p>
+            </div>
+        </div>
+    </div>
+    <script src="./NVDIA_STORE_MAIN.js"></script>
+
+
+    <script src="./main.js"></script>
+</body>
+
+</html>

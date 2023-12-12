@@ -835,6 +835,7 @@ padding-right: 5px;
 .img-col-lg {
     /* width: 300px; */
     width: 100%;
+    margin-bottom: 5px;
     /* padding-right: 30px; */
 }
 
@@ -1675,3 +1676,246 @@ html {
     left: 0;
     z-index: 1;
 }
+
+
+/*  Header  */
+.wrapper {
+    height: 44px;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    flex: 1;
+
+  }
+  
+  .inner {
+    margin: 0 auto;
+    height: 100%;
+    width: 1150px;
+  }
+  
+  .row {
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  .global-nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100vw;
+    min-width: 320px;
+    display: block;
+    font-size: 16px;
+    transition: top 0.5s;
+    background-color: #fff;
+  }
+  
+  .global-nav
+  .nav-header-container {
+    max-width: 1400px;
+    position: relative;
+    top: 0;
+    transition: all 0.5s;
+    width: 100%;
+    height: 44px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .nav-header-container
+  .logo-container{
+    position: relative;
+    width: 135px;
+    display: flex;
+    top: 10px;
+    align-items: center;
+    height: 44px;
+   
+  }
+  
+  .nav-header-container
+  .logo-container
+  .logo {
+    width: 140px;
+    height: 44px;
+    float: left;
+    vertical-align: middle;
+  }
+  
+  .nav-header-container
+  .nav-container {
+    display: flex;
+    align-items: center;
+    color: #000;
+    padding: 4px 15px 0 0;
+  
+    width: calc(100% - 100px);
+    margin: 0 auto 0 0;
+    height: 40px;
+    justify-content: space-between;
+  }
+  
+  .nav-header-container
+  .nav-container
+  .nav-menu-list {
+    float: left;
+    list-style-type: none;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 0;
+    &.left {
+      float: left;
+    }
+    &.right {
+      float: right;
+    }
+  }
+  
+  .nav-container
+  .nav-menu-list
+  .nav-menu-item {
+    display: inline-block;
+  }
+  
+  .nav-container
+  .nav-menu-list
+  .nav-menu-item label {
+    padding: 10px 10px 5px;
+    display: inline-block;
+    line-height: 22px;
+    cursor: pointer;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    letter-spacing: 1px;
+    color: #666;
+    margin: 0;
+  }
+  
+  .nav-header-container
+  .nav-tool-container {
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+  }
+  
+  .nav-header-container
+  .nav-tool-container ul {
+    display: flex;
+    list-style-type: none;
+  }
+  .nav-header-container
+  .nav-tool-container 
+  .nav-header-item {
+    float: left;
+    padding: 0 5px;
+  }
+  
+  .nav-header-container
+  .nav-tool-container 
+  .nav-header-item img {
+       fill: #eaeaea;
+    width: 30px;
+    height: 30px;
+  }
+  
+  .navbar-fixed-top {
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 44px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    border-width: 0 0 1px;
+    background-color: #080808;
+    border-color: #080808;
+}
+
+
+  
+  .navbar-fixed-top .container {
+    max-width: 1360px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    display: block !important;
+    width: 100%;
+  }
+  
+  .navbar-brand {
+    display: inline-block;
+    padding-top: 0.3125rem;
+    padding-bottom: 0.3125rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    line-height: inherit;
+    white-space: nowrap;
+    color: #fff;
+    font-weight: normal;
+    font-size: x-large;
+    font-family: Helvetica, Arial, Sans-Serif;
+  }
+  
+  .cart-counter{
+    color: #000;
+    background-color: #76b900;
+    font-size: 11px;
+    border-radius: 55%;
+    position:relative;
+    top: -10px;
+    padding: 3px 0 3px 1px;
+    min-width: 15px;
+    height: 15px;
+    display: inline-block;
+    text-align: center;
+    font-weight: bold;
+    vertical-align: middle;
+    line-height: 1;
+    left: 18px;
+    z-index: 1;
+  }
+  
+  
+  
+  /* Pagination styles */
+  .pagination {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .pagination button {
+    color: white;
+    padding: 8px 16px;
+    margin: 0 5px;
+    cursor: pointer;
+    border: none;
+    background: none;
+    font-size: 16px;
+  }
+
+  .pagination button:hover {
+    text-decoration: underline;
+  }
+
+  .pagination button:disabled {
+    color: #ddd;
+    cursor: not-allowed;
+  }
+
+  /* Additional styling for the active page */
+  .pagination button.active {
+    font-weight: bold;
+    text-decoration: underline;
+  }

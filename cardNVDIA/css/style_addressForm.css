@@ -1,0 +1,58 @@
+/* Basic CSS styles for the form */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+section {
+    background-color: #fff;
+    padding: 40px; /* Increased padding */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 60%; /* Adjusted width */
+    max-width: 500px; /* Maximum width */
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.input-field {
+    margin-bottom: 25px; /* Increased margin */
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px; /* Adjusted margin */
+}
+
+input[type="text"],
+input[type="tel"] {
+    width: 100%;
+    padding: 12px; /* Increased padding */
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    box-sizing: border-box; /* Added box-sizing */
+}
+
+button {
+    padding: 12px 24px; /* Increased padding */
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
