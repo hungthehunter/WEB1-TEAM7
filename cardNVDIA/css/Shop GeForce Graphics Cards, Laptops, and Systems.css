@@ -1015,6 +1015,17 @@ flex-direction: column;
     border-bottom: 1px solid #666;
     background-color: #000;
 }
+
+.load-more-product {
+    border: 1px solid transparent; /* Border mặc định */
+    transition: border-color 1s ease; /* Hiệu ứng chuyển động */
+  }
+
+  .load-more-product:hover {
+    border-color: #ffffff; /* Màu border khi active */
+  }
+
+
 .load-more-container{
     position: relative;
     width: 100%;
