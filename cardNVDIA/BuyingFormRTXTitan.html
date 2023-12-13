@@ -10,6 +10,47 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+          font-family: Arial, sans-serif;
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+        }
+    
+        form {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding: 20px;
+        }
+    
+        .form-container {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          width: 100%;
+        }
+    
+        img {
+          max-width: 100%;
+          height: auto;
+          margin-right: 20px;
+        }
+    
+        .text-container {
+          flex-grow: 1;
+        }
+    
+        button {
+          margin-top: 20px;
+          padding: 10px;
+          background-color: #007bff;
+          color: #fff;
+          border: none;
+          cursor: pointer;
+        }
+      </style>
 </head>
 <header class="wrapper">
     <div class="inner">
@@ -63,22 +104,18 @@
 
 <div class="c-12">
     <section>
-        <h1>Please Enter Your Delivery Address</h1>
-        <form action="./Shop GeForce Graphics Cards, Laptops, and Systems.html">
-            <div class="input-field">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" placeholder="Example : Lee Sin" required="">
+        <h1>Please Confirm Your Product</h1>
+        <form action="./Handle.html">
+            <div class="form-container">
+              <img src="./img/nvidia-titan-rtx-evens-4c25-P@2x.jpg" alt="Product Image" class="picture">
+              <div class="text-container">
+                <h1>NVIDIA GeForce RTX TiTan</h1>
+                <h3>TOTAL :  <span>$152.199</span></h3>
+                
+              </div>
             </div>
-            <div class="input-field">
-                <label for="phone">Phone number:</label>
-                <input type="tel" id="phone" name="phone" placeholder="Example : xxxx-xxxx-xxx" required="">
-            </div>
-            <div class="input-field">
-                <label for="address">Address :</label>
-                <input type="text" id="address" name="address" placeholder="Example : 142/12 WashingTon Stress " required="">
-            </div>
-            <button onclick="confirmAndLog()">CONFIRM</button>
-        </form>
+            <button type="submit">DELIVERY NOW</button>
+          </form>
     </section>
 </div>
     </div>
@@ -122,12 +159,6 @@
         </div>
     </div>
 </div>
-<script>
-    function confirmAndLog() {
-        var confirmationMessage = "Your requested product is being shipped.";
-            alert(confirmationMessage);
-    }
-</script>
 </body>
 
 </html>

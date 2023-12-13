@@ -250,5 +250,36 @@ th{
 }
 
 .product .another{
-	margin-top: 8px;
+	margin-top: 8p
+}
+
+/* table */
+table {
+	width: 100%;
+	border-collapse: collapse;
+	margin-top: 20px;
+}
+
+th, td {
+	border: 1px solid #ddd;
+	padding: 8px;
+	text-align: left;
+}
+
+th {
+	background-color: #f2f2f2;
+}
+
+.product img {
+	max-width: 50px;
+	max-height: 50px;
+	margin-right: 10px;
+}
+
+.product p {
+	margin: 0;
+}
+
+.state {
+	font-weight: bold;
 }

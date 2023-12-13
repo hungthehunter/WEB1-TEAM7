@@ -20,7 +20,8 @@
                     </li>
                     <div class="right">
                         <li>
-                            <input type="text" placeholder="Tên sản phẩm..."> 
+                            <input type="text" placeholder="Product Name..."> 
+
                             <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
                         </li>
                         <li>
@@ -33,14 +34,14 @@
         <main>
             <aside id="mySidebar">
 				<ul>
-					<li><a onclick="w3_close()">Đóng &times;</a></li>
-					<li><a href="orderAdmin.html">Đơn hàng</a></li>
-					<li><a class="active">Người dùng</a></li>
+					<li><a onclick="w3_close()">Close &times;</a></li>
+					<li><a href="./orderAdmin.html">Order</a></li>
+					<li><a class="active">User</a></li>
 				</ul>
 			</aside>
             <section id="main">
                 <button id="openNav" class="menu-button" onclick="w3_open()">&#9776; Menu</button>
-                <h1>Người Dùng</h1>
+                <h1>User List</h1>
                 <!--create button-->
                 <!-- mình dùng lại code của trang sửa thông tin sản phẩm -->
                 
@@ -50,27 +51,27 @@
                     <tr class="title">
                         <th>ID</th>
                         <th>Avatar</th>
-                        <th>Người dùng</th>
+                        <th>User</th>
                         <th>Email</th>
-                        <th>Loại người dùng</th>
-                        <th>Chức năng</th> <!-- Actions gồm thêm, sửa, khóa (không cho người dùng đăng nhập)-->
-                        <th>Khóa người dùng</th>
+                        <th>User type</th>
+                        <th>Function</th> <!-- Actions gồm thêm, sửa, khóa (không cho người dùng đăng nhập)-->
+                        <th>User lock</th>
                     </tr>
                     <!--thong tin users -->
                     <tr class="user">
                         <td>#1</td>
-                        <td><a href="userDetail.html"><img src="" alt="per1"></a>
-                        <td></td>
-                        <td></td>
+                        <td><img src="./img/flag.webp" alt="per1">
+                        <td>Lê Nguyễn Quốc Hưng</td>
+                        <td>lenguyenquochunghello@gmail.com</td>
                         <td>Admin</td>
                         <td>
-                            <a href="editUser.html" class="action-button">
+                           
                                 <i class="fas fa-edit"></i>
-                                <div class="action-tooltip">Chỉnh sửa</div>
-                            </a>
+                                <div class="action-tooltip">Edit</div>
+                          
                             <a class="action-button" onclick="warning(this)">
                                 <i class="fas fa-trash-alt"></i>
-                                <div class="action-tooltip">Xóa</div>
+                                <div class="action-tooltip">remove</div>
                             </a>
                         </td>
                         <td>
@@ -79,15 +80,15 @@
                     </tr>
                     <tr class="user">
                         <td>#2</td>
-                        <td><a href="userDetail.html"><img src="" alt="per1"></a>
-                        <td></td>
-                        <td></td>
-                        <td>Admin</td>
+                        <td><img src="./img/bundle-icon.e076c4688480c5ccbb8b.svg" alt="per1">
+                        <td>Lý Thiên Phúc</td>
+                        <td>lythienphuc@gmail.com</td>
+                        <td>Staff</td>
                         <td>
-                            <a href="editUser.html" class="action-button">
+                           
                                 <i class="fas fa-edit"></i>
                                 <div class="action-tooltip">Chỉnh sửa</div>
-                            </a>
+                         
                             <a class="action-button" onclick="warning(this)">
                                 <i class="fas fa-trash-alt"></i>
                                 <div class="action-tooltip">Xóa</div>
@@ -99,15 +100,15 @@
                     </tr>
                     <tr class="user">
                         <td>#3</td>
-                        <td><a href="userDetail.html"><img src="" alt="per1"></a>
-                        <td></td>
-                        <td></td>
-                        <td>Admin</td>
+                        <td><img src="./img/cardnews.webp" alt="per1">
+                        <td>Nguyễn Bằng</td>
+                        <td>nguyenbang@gmail.com</td>
+                        <td>Vip</td>
                         <td>
-                            <a href="editUser.html" class="action-button">
+                           
                                 <i class="fas fa-edit"></i>
                                 <div class="action-tooltip">Chỉnh sửa</div>
-                            </a>
+                      
                             <a class="action-button" onclick="warning(this)">
                                 <i class="fas fa-trash-alt"></i>
                                 <div class="action-tooltip">Xóa</div>

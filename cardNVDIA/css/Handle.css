@@ -337,3 +337,14 @@ button:hover {
   display: inline-flex;
   align-items: center;
 }
+
+/*   picture   */
+.picture{
+  width: 500px;
+    height:auto;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    object-fit: cover;
+}
