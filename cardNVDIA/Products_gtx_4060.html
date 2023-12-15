@@ -25,12 +25,15 @@
                     </div>
                     <!-- Check if the path is one of the specified ones -->
                     <div class="nav-tool-container">
-                        <span class="cart-counter">0</span>
-                        <div id="cart" class="cart">
-                            <i class="fa-solid fa-cart-shopping" style="color: black; margin-right: 14px;"></i>
-                        </div>
-                        <i class="fa-solid fa-user" style="color: black;"></i>
-                        <div id="sidebar" class="sidebar"></div>
+                      <div>
+                          <span id="user-email" style="color: black;"></span>
+                      </div>
+                      <span class="cart-counter">0</span>
+                      <div id="cart" class="cart">
+                      <a href="HistoryBuying.html"><i class="fa-solid fa-cart-shopping" style="color: black; margin-right: 14px;"></i></a>
+                      </div>
+                      <i class="fa-solid fa-user" style="color: black;" onclick="toggleLogin()"></i>
+                      <div id="sidebar" class="sidebar"></div>
                     </div>
                 </div>
                 <nav class="navbar-fixed-top">
@@ -45,9 +48,7 @@
             </nav>
         </div>
     </header>
-    <div class="grid wide">
-    <div class="row">
-    <div class="inner">
+ <div class="wrapper">
         <div class="grid wide">
           <div class="products">
             <div class="row">
@@ -159,7 +160,7 @@
                                 </span>
                               </td>
                               <td class="col-info-long">
-                                <span style="font-size: 18px;">NVIDIA® GeForce RTX® 4080</span>
+                                <span style="font-size: 18px;">NVIDIA® GeForce RTX™ 4060</span>
                               </td>
                             </tr>
                             <tr>
@@ -169,7 +170,7 @@
                                 </span>
                               </td>
                               <td class="col-info-long">
-                                <span style="font-size: 18px;">PCI Express 4.0</span>
+                                <span style="font-size: 18px;">PCI-E 4.0</span>
                               </td>
                               <tr>
                                 <td class="col-info">
@@ -178,7 +179,7 @@
                                   </span>
                                 </td>
                                 <td class="col-info-long">
-                                  <span style="font-size: 18px;">OC Mode: 2535 MHz</span>
+                                  <span style="font-size: 18px;">OC Mode: 2550 MHz</span>
                                 </td>
                               </tr>
                               <tr>
@@ -188,7 +189,7 @@
                                   </span>
                                 </td>
                                 <td class="col-info-long">
-                                  <span style="font-size: 18px;">2505 MHz (Boost Clock)</span>
+                                  <span style="font-size: 18px;">2460 MHz (Boost Clock)</span>
                                 </td>
                               </tr>
                               <tr>
@@ -198,7 +199,7 @@
                                   </span>
                                 </td>
                                 <td class="col-info-long">
-                                  <span style="font-size: 18px;">9728</span>
+                                  <span style="font-size: 18px;">3072</span>
                                 </td>
                               </tr>
                               <tr>
@@ -208,7 +209,7 @@
                                   </span>
                                 </td>
                                 <td class="col-info-long">
-                                  <span style="font-size: 18px;">22.4 Gbps</span>
+                                  <span style="font-size: 18px;">17 Gbps</span>
                                 </td>
                               </tr>
                               <tr>
@@ -228,7 +229,7 @@
                                   </span>
                                 </td>
                                 <td class="col-info-long">
-                                  <span style="font-size: 18px;">16 GB GDDR6X</span>
+                                  <span style="font-size: 18px;">8 GB GDDR6X</span>
                                 </td>
                               </tr>
                               <tr>
@@ -238,7 +239,7 @@
                                   </span>
                                 </td>
                                 <td class="col-info-long">
-                                  <span style="font-size: 18px;">256-bit</span>
+                                  <span style="font-size: 18px;">128-bit</span>
                                 </td>
                               </tr>
                               <tr>
@@ -260,13 +261,13 @@
                                 <td class="col-info-long">
                                   <ul>
                                     <li>
-                                      <span style="font-size: 18px;">1 x Native HDMI 2.1</span>
+                                      <span style="font-size: 18px;">2 x Native HDMI 2.1</span>
                                     </li>
                                     <li>
-                                      <span style="font-size: 18px;">3 x Native DisplayPort 1.4a</span>
+                                      <span style="font-size: 18px;">2 x Native DisplayPort 1.4a</span>
                                     </li>
                                     <li>
-                                      <span style="font-size: 18px;">HDCP Support: Yes (2.3)</span>
+                                      <span style="font-size: 18px;">HDCP Support: No</span>
                                     </li>
                                     <li>
                                       <span style="font-size: 18px;">Maximum Supported Displays: 4</span>
@@ -324,7 +325,7 @@
                                   </span>
                                 </td>
                                 <td class="col-info-long">
-                                  <span style="font-size: 18px;">300 x 120 x 50 mm</span>
+                                  <span style="font-size: 18px;">281 x 114 x 38 mm</span>
                                 </td>
                               </tr>
                               <tr>
@@ -334,7 +335,7 @@
                                   </span>
                                 </td>
                                 <td class="col-info-long">
-                                  <span style="font-size: 18px;">750W</span>
+                                  <span style="font-size: 18px;">450W</span>
                                 </td>
                               </tr>
                               <tr>
@@ -344,7 +345,7 @@
                                   </span>
                                 </td>
                                 <td class="col-info-long">
-                                  <span style="font-size: 18px;">1 x 16-pin</span>
+                                  <span style="font-size: 18px;">1 x 8-pin</span>
                                 </td>
                               </tr>
                           </tbody>
@@ -433,6 +434,46 @@
                     </div>
                   </div>
                 </div>
-
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="foot">
+          <div class="container_footer">
+            <div class="topfoot">
+              <div class="footmenu">
+                <h4>LIÊN HỆ</h4>
+                <p>Email:<a href="">phucly069@gmail.com</a>
+                  <a href="">lenguyenquochunghello@gmail.com </a>
+                  <a href="">nguyenbang.2301@gmail.com</a>
+                </p>
+                <p>Hotline:<a href="">1900 633 028</a>
+                </p>
+                <p>Mon-Sun<a href="">09:30 - 21:30</a>
+                </p>
+              </div>
+              <div class="footmenu">
+                <h4>CỬA HÀNG</h4>
+                <p>273 An Dương Vương,TPHCM</a><br>
+                <p>123 Alexander, Toronto, Canada</a><br>
+                <p>842 Donald, California, America</a><br>
+              </div>
+              <div class="footmenu">
+                <h4>HỖ TRỢ</h4>
+                <a href="contact.html">Chính sách đổi trả & bảo hành</a>
+              </div>
+              <div class="footmenu">
+                <h4>MỞ RỘNG</h4>
+                <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                <a href="https://twitter.com/?lang=vi"><i class="fab fa-twitter"></i></a>
+              </div>
+    
+            </div>
+            <div class="botfoot">
+              <p>2022 &#169; Copyright NVIDIA. All Rights Reserved.</p>
+            </div>
+          </div>
+        </div>
 </body>
 </html>

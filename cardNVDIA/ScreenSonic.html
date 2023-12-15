@@ -18,19 +18,22 @@
                 <div class="nav-header-container">
                     <div class="logo-container">
                         <div class="logo">
-                            <a href="index.html">
+                            <a href="./index.html">
                                 <img src="./img/NVIDIA.png" alt="nvidia-icon" style="width: 100px; height: 20px;">
                             </a>
                         </div>
                     </div>
                     <!-- Check if the path is one of the specified ones -->
                     <div class="nav-tool-container">
-                        <span class="cart-counter">0</span>
-                        <div id="cart" class="cart">
-                            <i class="fa-solid fa-cart-shopping" style="color: black; margin-right: 14px;"></i>
-                        </div>
-                        <i class="fa-solid fa-user" style="color: black;"></i>
-                        <div id="sidebar" class="sidebar"></div>
+                      <div>
+                          <span id="user-email" style="color: black;"></span>
+                      </div>
+                      <span class="cart-counter">0</span>
+                      <div id="cart" class="cart">
+                      <a href="HistoryBuying.html"><i class="fa-solid fa-cart-shopping" style="color: black; margin-right: 14px;"></i></a>
+                      </div>
+                      <i class="fa-solid fa-user" style="color: black;" onclick="toggleLogin()"></i>
+                      <div id="sidebar" class="sidebar"></div>
                     </div>
                 </div>
                 <nav class="navbar-fixed-top">
@@ -45,9 +48,7 @@
             </nav>
         </div>
     </header>
-    <div class="grid wide">
-    <div class="row">
-    <div class="inner">
+    <div class="wrapper">
         <div class="grid wide">
           <div class="products">
             <div class="row">
@@ -434,6 +435,50 @@
                   </div>
                   
                 </div>
+              </div>
+              </div>
+            </div>
+          </div>
+    
+                <div id="foot">
+                  <div class="container_footer">
+                      <div class="topfoot">
+                          <div class="footmenu">
+                              <h4>LIÊN HỆ</h4>
+                              <p>Email:<a href="">phucly069@gmail.com</a>
+                                  <a href="">lenguyenquochunghello@gmail.com </a>
+                                  <a href="">nguyenbang.2301@gmail.com</a>
+                              </p>
+                              <p>Hotline:<a href="">1900 633 028</a>
+                              </p>
+                              <p>Mon-Sun<a href="">09:30 - 21:30</a>
+                              </p>
+                          </div>
+                          <div class="footmenu">
+                              <h4>CỬA HÀNG</h4>
+                              <p>273 An Dương Vương,TPHCM</a><br>
+                              <p>123 Alexander, Toronto, Canada</a><br>
+                              <p>842 Donald, California, America</a><br>
+                          </div>
+                          <div class="footmenu">
+                              <h4>HỖ TRỢ</h4>
+                              <a href="contact.html">Chính sách đổi trả & bảo hành</a>
+                          </div>
+                          <div class="footmenu">
+                              <h4>MỞ RỘNG</h4>
+                              <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                              <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                              <a href="https://twitter.com/?lang=vi"><i class="fab fa-twitter"></i></a>
+                          </div>
+                          
+                      </div>
+                      <div class="botfoot" >
+                          <p>2022 &#169; Copyright NVIDIA. All Rights Reserved.</p>
+                      </div>
+                  </div>
+              </div>
+  
+         
            
 </body>
 </html>
